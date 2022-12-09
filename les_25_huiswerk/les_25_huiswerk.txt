@@ -1,0 +1,113 @@
+
+!!LES_25_HUISWERK!!
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>jQuery</title>
+    <link rel="icon" type="image/ x-icon" href="jQuery.ico">
+
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#knop").click(function () {
+                var naam = $("#idTekstveld").val();
+                window.alert("Dag " + naam);
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
+
+    <style>
+        body {
+            padding: 2%;
+            background-image: url('jQuery.png');
+            background-repeat: no-repeat;
+            height: auto;
+            width: auto;
+            background-color: dimgray;
+            text-align: center;
+
+        }
+
+        p {
+            color: rgb(20, 218, 20);
+        }
+
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #0fcc6e;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 5px;
+            display: none;
+            max-width: 30%;
+            margin: auto;
+        }
+
+        #flip {
+            max-width: 30%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flip">Klik op deze balk om het paneel te openen en te sluiten.</div>
+    <div id="panel">Kijk verder op de site hieronder voor meer informatie over jQuery.</div>
+
+    <br><br>
+
+    <header>
+        <p>
+         <h1 style="color: tomato;">Over jQuery</h1>
+        </p>
+    </header>
+
+
+
+    <br><br><br><br><br><br>
+
+    <p>
+        Deze website vertelt iets over jQuery. Er wordt ook iets getoond over de werking hiervan. <br>
+        jQuery is een gratis opensource JavaScript-bibliotheek voor dynamische en interactieve websites. Het maakt
+        programmeren in JavaScript makkelijker,<br>
+        net als het bewerken van bijvoorbeels CSS. In jQuery zitten mogelijkheden voor effecten, animaties en
+        hulpmiddelen (utility's).
+    </p>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <form action="/action_page.php">
+        <p style="color: rgb(235, 220, 11);">Wat is uw naam?</p>
+        <input type="text" id="idTekstveld">
+        <input id="knop" name="knop" type="button" value="Verstuur"
+            style="background-color: rgb(20, 218, 20); border-radius: 30%;">
+    </form>
+
+    <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+
+
+
+</body>
+
+</html>
